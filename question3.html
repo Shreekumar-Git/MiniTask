@@ -1,0 +1,75 @@
+<!-- Design a contact us form with all fields as required. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+
+<body>
+    <div class="contact">
+        <form>
+            <h1>Contact Us</h1>
+            <p>Please fill out the form below to get contact with us.</p>
+            <label for="name">Name:<span class="required" style="color: red;">*</span></label> 
+            <input type="text" name="name" placeholder="Enter your name" required><br>  
+            <label for="email">Email: <span class="required" style="color: red;">*</span></label> 
+            <input type="email" name="email" placeholder="Enter your email" required><br> 
+            <label for="phone">Phone:<span class="required" style="color: red;">*</span></label> 
+            <input type="tel" name="phone" placeholder="Enter your phone number" required><br> 
+            <label for="message">Message:<span class="required" style="color: red;">*</span></label> 
+            <textarea name="message" placeholder="Enter your message" rows="8" cols="8" required></textarea><br> 
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
+</body>
+<style>
+    body {
+        background-color: #f4f4f4; 
+        padding: 50px;  
+        font-family: Arial, sans-serif; 
+    }
+
+    .contact {
+        width: 600px; 
+        margin: auto; 
+        background: white; 
+        padding: 20px; 
+        border-radius: 5px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,p {
+        text-align: center; 
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+        width: 98%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .submit-button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 98%;
+    }
+
+    .submit-button:hover {
+        background-color: #218838;
+    }
+</style>
+
+</html>
